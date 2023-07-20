@@ -1,8 +1,10 @@
   /* START WhoWeAre Section */
-* {
+/* REMOVE THIS */
+  * {
     margin: 0;
     padding: 0;
 }
+/* REMOVE THIS */
 
 .who_we_are_pageContainer {
     background-color: #F4EEDB;
