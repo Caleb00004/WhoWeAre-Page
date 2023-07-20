@@ -1,8 +1,13 @@
   /* START WhoWeAre Section */
+* {
+    margin: 0;
+    padding: 0;
+}
 
-
-  .who_we_are_pageContainer {
+.who_we_are_pageContainer {
     background-color: #F4EEDB;
+    padding-left: 2em;
+    padding-right: 2em;
     text-align: center;
     padding-bottom: 3em;
     padding-top: 2em;
@@ -121,14 +126,14 @@
 }
 
 .who_we_are_imgcontainer img {
-    position: relative;
+    position: relative; 
     top: -0.5em;
     left: 0.5em;
     width: 100%
 }
 
 #gavin_img {
-    width: 16em;
+    width: 26em;
 }
 
 #gavin_img > img {
@@ -140,12 +145,6 @@
     position: relative;
     width: 25em;
     margin-top: 7em;
-    /* background-color: red; */
-    /* scale: 1.3; */
-}
-
-.maze_imgcontainer img {
-    /* width: 10em; */
 }
 
 .maze_img {
@@ -161,34 +160,38 @@
     top: -9em;
 }
 
+/* .highlights_container {
+    margin-top: 31em;
+} */
+
+.highlights_container > h4 {
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.highlight_bold {
+    font-weight: bolder;
+}
+
 @media screen and (max-width: 1030px) {
     .who_we_are_pagecontent {
-        display: flex;
-        flex-direction: column;
         padding-left: 2em;
         padding-right: 2em;
     }
     .who_we_are_textcontainer h4 {
       font-size: 1.6em;
       padding-bottom: 0.5em;
-      display: flex;
-      align-items: center;
   }
     .who_we_are_textcontainer h2 {
       margin-top: 1em;
-      color: #0A4988;
       font-size: 2.2em;
       padding-bottom: 0.5em;
   }
     
     .who_we_are_pageContainer > h1 {
-      color: #0A4988;
-      /* border-bottom: 1px solid black; */
       font-size: 55px;
-      margin-left: auto;
-      margin-right: auto;
       margin-bottom: 0.3em;
-      position: relative;
     }
     .who_we_are_pageContainer > h2 {
       font-size: 45px;
@@ -207,14 +210,17 @@
         flex: 1;
     }
     .maze_imgcontainer {
-        position: relative;
         width: 23em;
         margin-top: 10em;
-        /* background-color: red; */
-        /* scale: 1.3; */
     }
     .who_we_are_textcontainer > p {
         width: 95%;
+    }
+    #gavin_img {
+        width: 20em;
+    }
+    #flex_item3_highlights_container {
+        width: 140%;
     }
 }
 
@@ -225,19 +231,18 @@
     }
     .who_we_are_textcontainer h2 {
       margin-top: 1em;
-      color: #0A4988;
       font-size: 2em;
       padding-bottom: 0.5em;
   }
-    
+    .who_we_are_pageContainer {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
     .who_we_are_pageContainer > h1 {
-      color: #0A4988;
-      /* border-bottom: 1px solid black; */
       font-size: 45px;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 0.3em;
-      position: relative;
     }
     .who_we_are_pageContainer > h2 {
       font-size: 35px;
@@ -283,12 +288,10 @@
         width: 65%;
     }
     .maze_imgcontainer {
-        position: relative;
         width: 23em;
         margin-top: -4em;
         margin-bottom: -2em;
         margin-left: auto;
-        /* scale: 1.3; */
     }
     .flex_item1_reduce_width_txt {
         width: 50%;
@@ -297,42 +300,46 @@
         width: 60%;
     }
     #flex_item1_imgcontainer {
-        width: 20em;
+        width: 50%;
         margin-left: auto;
-        margin-top: -20em;
+        margin-top: -44.5em;
     }
     #gavin_img {
+        /* background-color: green; */
         width: 16em;
         margin-left: auto;
-        margin-top: -30em;
+        margin-top: -53em;
+    }
+    .highlights_container {
+        width: 100%;
+    }
+    #flex_item3_highlights_container {
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 680px) {
-
-  .who_we_are_textcontainer h2 {
-    margin-top: 1em;
-    color: #0A4988;
-    font-size: 1.8em;
-    padding-bottom: 0.5em;
-}
-.who_we_are_textcontainer p {
-  width: 90%;
-  margin-bottom: 0.7em;
-  font-size: 0.8em;
-}
-.QuoteTestWhoWeAre{
-  font-size: 20px;
-  color: gray;
-}
+    .who_we_are_pageContainer {
+        padding-left: 0.4em;
+        padding-right: 0.4em;
+    }
+    .who_we_are_textcontainer h2 {
+        margin-top: 1em;
+        font-size: 1.8em;
+        padding-bottom: 0.5em;
+    }
+    .who_we_are_textcontainer p {
+        width: 90%;
+        margin-bottom: 0.7em;
+        font-size: 0.8em;
+    }
+    .QuoteTestWhoWeAre{
+        font-size: 20px;
+        color: gray;
+    }
     .who_we_are_pageContainer > h1 {
-      color: #0A4988;
-      /* border-bottom: 1px solid black; */
       font-size: 35px;
-      margin-left: auto;
-      margin-right: auto;
       margin-bottom: 0.3em;
-      position: relative;
     }
     .who_we_are_pageContainer > h2 {
       font-size: 25px;
@@ -360,12 +367,6 @@
         margin-right: auto;
         margin-top: -3em;
     }
-
-    #gavin_img {
-        width: 16em;
-        margin-left: unset;
-        margin-top: -3em;
-    }
     .flex_item1_small_txt p {
         width: 100%;
     }
@@ -382,7 +383,56 @@
         display: none;
     }
 
+    /* NEW CODE */
+    .reducetxt_width_mobile {
+        width: 80%;
+    }
+
+    #gavin_img {
+        height: 10em;
+        margin-right: 1em;
+        width: 6em;
+        margin-top: -33em;
+    }
+
+    #gavin_img>img {
+        height: 10em;
+    }
+
+    .test_container {
+        flex: 1;
+        border-radius: 5px;
+    }
+
 }
 
+/* medaia querys for positioning gavin image */
+@media screen and (max-width: 582px) {
+    #gavin_img {
+        margin-top: -36em;
+    }
+}
+
+@media screen and (max-width: 462px) {
+    .who_we_are_pageContainer {
+        padding-bottom: 0;
+    }
+    #gavin_img {
+        width: 5.5em;
+        margin-top: -38.5em;
+    }
+}
+@media screen and (max-width: 433px) {
+    #gavin_img {
+        margin-top: -43em;
+        margin-right: unset;
+     }
+}
+@media screen and (max-width: 379px) {
+    #gavin_img {
+        margin-top: -47em;
+        width: 5em;
+    }
+}
 
   /* END WhoWeAre Section */
